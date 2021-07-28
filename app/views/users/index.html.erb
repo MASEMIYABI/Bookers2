@@ -4,6 +4,7 @@
 
 <div class='col-md-8 offset-md-1'>
  <h2>Users</h2>
+
  <table class='table table-hover table-inverse'>
 
  <thead>
@@ -18,7 +19,7 @@
    <tr>
    <td><%= attachment_image_tag @user, :profile_image, fallback:"no_image.jpg", size: "100x100" %></td>
    <td><%=t.name %></td>
-   <td><%=link_to "show",user_path(t.id)%></td>
+   <td><%=link_to "Show",user_path(t.id)%></td>
    </tr>
    <% end %>
 
